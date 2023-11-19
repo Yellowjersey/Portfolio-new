@@ -7,16 +7,18 @@ import Projects from './Pages/Projects';
 import './App.css';
 
 import Skills from './Pages/Skills';
+import Merged from './Pages/Merged';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<AppLayout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Merged />} />
           <Route path="education" element={<Education />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="hobbies" element={<Skills />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="merged" element={<Merged />} />
         </Route>
       </Routes>
     </BrowserRouter>

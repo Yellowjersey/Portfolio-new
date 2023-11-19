@@ -20,37 +20,43 @@ const HeaderInner = styled.div`
   gap: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  cursor: pointer;
 `;
 
 const StyledText = styled.p`
   color: white;
-  background-color: #e04c3f;
+  background-color: rgb(243, 169, 9);
   padding: 5px;
   border-radius: 50px;
-  cursor: pointer;
+  cursor: default;
   font-size: 1.2rem;
+  margin-left: 420px;
 `;
 
 function Header() {
   return (
-    <StyledHeader>
+    <StyledHeader className="top">
       <HeaderInner>
-        <HeaderItem>
-          <Link to="/">
-            <img
-              className="headerImage "
-              src="/Gb-Logo.png"
-              alt="GB Portfolio"
-            />
-          </Link>
+        <HeaderItem ID="headerItemStale">
+          <img className="headerImage " src="/Gb-Logo.png" alt="GB Portfolio" />
         </HeaderItem>
       </HeaderInner>
       <HeaderInner>
         <StyledText>Gavin Bradford Portfolio</StyledText>
       </HeaderInner>
       <HeaderInner>
-        <HeaderItem>
+        <HeaderItem ID="headerItem">
+          <a
+            href="/Gavin_Bradford_Resume.pdf"
+            download="Gavin_Bradford_Resume.pdf"
+          >
+            <img
+              className="headerImage"
+              src="./resume.png"
+              alt="GB Portfolio"
+            />
+          </a>
+        </HeaderItem>
+        <HeaderItem ID="headerItem">
           <a
             href="https://www.linkedin.com/in/gavin-bradford-ab2566123/"
             target="#blank"
@@ -62,12 +68,12 @@ function Header() {
             />
           </a>
         </HeaderItem>
-        <HeaderItem>
+        <HeaderItem ID="headerItem">
           <a href="https://github.com/Yellowjersey" target="#blank">
             <img className="headerImage" src="/github.png" alt="GB Portfolio" />
           </a>
         </HeaderItem>
-        <HeaderItem>
+        <HeaderItem ID="headerItem">
           <a href="mailto:bradfordgavin@gmail.com?subject=Portfolio%20Inquiry">
             <img className="headerImage" src="/email.png" alt="GB Portfolio" />
           </a>

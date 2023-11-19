@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import Sidebar from '../UI/SideBar';
+import SideBarSmooth from '../UI/SideBarSmooth';
 import Header from '../UI/Header';
 import styled from 'styled-components';
 
@@ -11,19 +11,17 @@ const StyledAppLayout = styled.div`
 
 const StyledMain = styled.div`
   display: flex;
-
+  padding-left: 500px;
   padding-top: 20px;
   justify-content: center;
 `;
-
-// test update
 
 function AppLayout() {
   return (
     <>
       <Header />
       <StyledAppLayout>
-        <Sidebar />
+        <SideBarSmooth />
         <StyledMain>
           <Outlet />
         </StyledMain>

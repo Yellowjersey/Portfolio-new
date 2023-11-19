@@ -7,9 +7,13 @@ import styled from 'styled-components';
 
 const StyledSideBar = styled.ul`
   width: 200px;
-  height: 100vh;
-
+  height: fit-content;
+  background-color: rgb(243, 169, 9);
   list-style: none;
+  /* margin-top: -20px; */
+  padding-top: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 `;
 
 function SideBar() {
@@ -61,7 +65,7 @@ function SideBar() {
         </Link>
       </LinkButton>
       <LinkButton>
-        <Link to="/hobbies">
+        <Link to="/skills">
           <SideBarItem>
             <LinkImage
               source={'/hobbies.png'}
@@ -74,6 +78,20 @@ function SideBar() {
           </SideBarItem>
         </Link>
       </LinkButton>
+      {/* <LinkButton>
+        <Link to="/merged">
+          <SideBarItem>
+            <LinkImage
+              source={'/Gear.png'}
+              alt="Hobbies"
+              height="40px"
+              width="40px"
+              style={{ marginRight: '10px' }}
+            />{' '}
+            Merged Test
+          </SideBarItem>
+        </Link>
+      </LinkButton> */}
     </StyledSideBar>
   );
 }

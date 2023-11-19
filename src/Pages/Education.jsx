@@ -3,6 +3,7 @@ import ContentContainer from '../UI/ContentContainer';
 function Education() {
   return (
     <div
+      className="education"
       style={{
         display: 'flex',
         flexDirection: 'column',
@@ -16,6 +17,8 @@ function Education() {
         style={{
           width: '40%',
           textAlign: 'center',
+          backgroundColor: 'rgb(243, 169, 9)',
+          color: 'white',
         }}
       >
         <h1>Education</h1>
